@@ -1,0 +1,341 @@
+html {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #FFFADA;
+}
+
+.aboutus {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+    url(Images/Desktop/AboutUsBanner.png);
+    background-size: cover;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.aboutus h1 {
+    margin: 0;
+    font-size: 88px;
+    font-family: 'Abril Fatface';
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    line-height: 500px;
+}
+
+.title {
+    margin-top: 35px;
+    height: 150px;
+    background-color: #BD6124;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#title2 {
+    background-color: #8AB682;
+}
+
+#title3 {
+    background-color: #699B7F;
+}
+
+.title h1{
+    font-size: 45px;
+    font-family: 'Abril Fatface';
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    line-height: 40px;
+}
+
+.title h3{
+    letter-spacing: 0.06em;
+}
+
+.history1 {
+    display: flex;
+}
+
+.image {
+    width: 50%;
+}
+
+.content {
+    width: 50%;
+    background-color: #113F59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content2 {
+    background-color: #4E3123;
+}
+
+.inside {
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h2 {
+    font-family: 'Abril Fatface';
+    font-size: 54px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 0.06em;
+    line-height: 100%;
+    text-align: center;
+}
+
+.content p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 150%;
+    margin: 45px 0;
+}
+
+.innovation {
+    display: flex;
+    text-align: center;
+    height: 500px;
+}
+
+.innovation h1{
+    padding-top: 100px;
+    font-size: 35px;
+    font-family: 'Abril Fatface';
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    line-height: 40px;
+}
+
+.innovation p{
+    font-size: 25px;
+    padding: 0 70px;
+}
+
+.innovation h1, .innovation p{
+    opacity: 0;
+}
+
+.innovation1:hover h1, .innovation1:hover p{
+    opacity: 100%;
+}
+
+
+.innovation2:hover h1, .innovation2:hover p{
+    opacity: 100%;
+}
+
+.innovation1{
+    background: url(Images/Desktop/Innovation1.png);
+}
+
+.innovation1:hover{
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.7)),
+    url(Images/Desktop/Innovation1.png);
+}
+
+.innovation2{
+    background: url(Images/Desktop/Innovation2.png);
+}
+
+.innovation2:hover{
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.7)),
+    url(Images/Desktop/Innovation2.png);
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding:15px 0;
+}
+
+.card {
+    margin: 20px 10px;
+    position: relative;
+    width: 315px;
+    height: 315px;
+    transition: 0.3s ease-out;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+    border-radius: 25px;
+}
+
+.card .imgbox {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.5s;
+}
+
+.card .profile{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    padding: 8px 20px;
+    background-color: #ffffff;
+    transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+    color:black;
+    border-radius: 22px;
+    text-align: center;
+    opacity: 90%;
+}
+
+.card .profile h2{
+    font-weight: bold;
+    color: #007047;
+    font-size: 20px;
+    line-height: 22.5px;
+}
+
+.card .profile p{
+    font-size: 14px;
+}
+
+.card:hover .profile{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.card:hover .profile h2{
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 1030px){
+    .content h2 {
+        font-size: 45px;
+    }
+    .content p {
+        font-size: 19px;
+        line-height: 130%;
+        margin: 25px 0;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .aboutus {
+        background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+        url(Images/Desktop/AboutUsBanner.png);
+        background-size: cover;
+        margin-top: 25px;
+    }
+
+    .title {
+        margin-top: 25px;
+    }
+
+    .inside {
+        width: 76%;
+    }
+
+    .aboutus h1 {
+        font-size: 64px;
+        line-height: 247px;
+    }
+
+
+    .content h2 {
+        font-size: 35px;
+    }
+
+    .content p {
+        font-size: 15px;
+        line-height: 130%;
+        margin: 25px 0;
+    }
+
+    .innovation{
+        display: inline-block;
+    }
+    
+    .innovation h1{
+        font-size: 25px;
+    }
+
+    .innovation p{
+        font-size: 15px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .aboutus h1 {
+        font-size: 55px;
+        line-height: 200px;
+    }
+
+    .title h1{
+        font-size: 30px;
+    }
+
+    .title h3{
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 13px;
+        line-height: 130%;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .aboutus {
+        margin-top: 20px;
+    }
+
+    .aboutus h1 {
+        font-size: 40px;
+        line-height: 150px;
+    }
+
+    .history1 {
+        flex-direction: column;
+    }
+
+    #history2 {
+        flex-direction: column-reverse;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        padding: 30px 0;
+    }
+}

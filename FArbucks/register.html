@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- buat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- exclamation icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <!-- buat icon di navbar mobile -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
+
+    <title>FArbucks - Register</title>
+</head>
+<body>
+    <header class="header">
+        <img src="Images/FArbucksLogo.png" alt="FArbucks Logo">
+        <ul>
+            <a href="#"><button class="registerBtn">Register</button></a>
+            <a href="login.html"><button class="loginBtn">Log In</button></a>
+        </ul>
+    </header>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <li id="openmenu"><i class="material-icons">menu</i>MENU</li>
+            <li id="closemenu"> <i class="material-icons">close</i>CLOSE</li>
+        </label>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="coffee.html">COFFEE</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Member Registration</h1>
+        <form method="post" id="form" name="form" novalidate>
+            <div class="formdiv">
+                <label for="namee">Full Name:</label>
+                <input type="text" id="namee" name="namee" placeholder="Enter your full name">
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Error Message</small>
+            </div>
+
+            <div class="formdiv">
+                <p class="genderp">Gender:</p>
+                <div class="gender" id="gender">
+                    <input type="radio" id="male" name="gender"><label for="male">Male</label>
+                    <input type="radio" id="female" name="gender"><label for="female">Female</label>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small id="small">Error Message</small>
+                </div>
+            </div>
+
+            <div class="formdiv">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Error Message</small>
+            </div>
+
+            <div class="formdiv">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Error Message</small>
+            </div>
+
+            <div class="formdiv">
+                <label for="city">City of Residence:</label>
+                <select name="city" id="city">
+                    <option value="" selected disabled hidden>Select a city</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Surabaya">Surabaya</option>
+                    <option value="Bekasi">Bekasi</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Medan">Medan</option>
+                    <option value="Depok">Depok</option>
+                    <option value="Tangerang">Tangerang</option>
+                    <option value="Palembang">Palembang</option>
+                    <option value="Semarang">Semarang</option>
+                    <option value="Makassar">Makassar</option>
+                    <option value="Batam">Batam</option>
+                    <option value="Bandar Lampung">Bandar Lampung</option>
+                    <option value="Bogor">Bogor</option>
+                    <option value="Pekanbaru">Pekanbaru</option>
+                    <option value="Padang">Padang</option>
+                    <option value="Malang">Malang</option>
+                    <option value="Others">Others</option>
+                </select>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Error Message</small>
+            </div>
+
+            <div class="formdiv">
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" rows="4">Enter your address</textarea>
+                <i class="fas fa-exclamation-circle" id="addressi"></i>
+                <small id="small">Error Message</small>
+            </div>
+
+            <div class="formdiv" id="formdiv">
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Error Message</small>
+            </div>
+
+            <div class="formdiv">
+                <label for="passwordval">Confirm Password: </label>
+                <input type="password" id="passwordval" name="passwordval" placeholder="Confirm your password">
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Error Message</small>
+            </div>
+
+            <div class="formdiv" id="agreediv">
+                <input type="checkbox" id="agree" name="agree" value="agree">
+                <label for="agree" id="agreelabel">I agree to <a href="termsandconditions.html" target="_blank">the terms and conditions</a></label>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Error Message</small>
+            </div>
+
+            <div class="buttondiv">
+                <input type=submit value="Submit" id="submit">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <ul>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Images/Instagram.png" alt="instagram"></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><img src="Images/Twitter.png" alt="twitter"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="Images/Facebook.png" alt="facebook"></a>
+        </ul>
+        <div>
+            <h6 class="copyright">Copyright &copy 2021 [FArbucks]. All Rights Reserved</h6>
+        </div>
+    </footer>
+
+    <script src="register.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+main {
+    margin: 5% 10%;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-family: 'Abril Fatface';
+    font-weight: lighter;
+    margin: auto;
+    color: #007047;
+    text-align: center;
+}
+
+h2 {
+    color: #007047;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 810px){
+    p, ul {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    p, ul {
+        font-size: 13px;
+    }
+}

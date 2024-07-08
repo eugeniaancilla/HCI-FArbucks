@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- buat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- buat icon di navbar mobile -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="events.css">
+    <title>FArbucks - Events</title>
+</head>
+
+<body class="body">
+
+    <header class="header">
+        <img src="Images/FArbucksLogo.png" alt="FArbucks Logo">
+        <ul>
+            <a href="register.html"><button class="registerBtn">Register</button></a>
+            <a href="login.html"><button class="loginBtn">Log In</button></a>
+        </ul>
+    </header>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <li id="openmenu"><i class="material-icons">menu</i>MENU</li>
+            <li id="closemenu"> <i class="material-icons">close</i>CLOSE</li>
+        </label>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="coffee.html">COFFEE</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+    </nav>
+    
+    <main class="eventsMain">
+        <div class="ourEvents">
+            <h1>Our Events</h1>
+        </div>
+
+        <div class="event">
+            <img class="image" src="Images/Desktop/LatteArt.jpg" alt="Latte Art">
+            <div class="content">
+                <div class="inside">
+                    <h2>Latte Art Competition</h2>
+                    <p>Great news for those of you who can do latte art! Every Monday, we hold a latte art competition, where we will provide the ingredients. All you need to do is show off your best latte art! Winners will get a free coffee of their choice and a FArbucks voucher.</p>
+                    <a href="#"><button class="button">Learn More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="event" id="event2">
+            <div class="content" id="content2">
+                <div class="inside">
+                    <h2>Tumbler Day</h2>
+                    <p>Every Wednesday is a special day for our FArbucks customers! For those of you who bring your official FArbucks tumbler, you will get a 30% discount for your favorite drink.</p>
+                    <a href="#"><button class="button">Learn More</button></a>
+                </div>
+            </div>
+            <img class="image" src="Images/Desktop/TumblerDay.jpg" alt="Tumbler Bottle">
+        </div>
+
+        <div class="event" id="event3">
+            <img class="image" src="Images/Desktop/FArbucksFriYAY.jpg" alt="Two Coffees">
+            <div class="content" id="content3">
+                <div class="inside" id="inside3">
+                    <h2>FArbucks FriYAY</h2>
+                    <p>TGIF! Good news for our FArbucks customers! Every Friday, there’s a special buy 1 get 1 promo at FArbucks. Just pay with your FArbucks card, and you will get another free coffee!</p>
+                    <a href="#"><button class="button">Learn More</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Images/Instagram.png" alt="instagram"></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><img src="Images/Twitter.png" alt="twitter"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="Images/Facebook.png" alt="facebook"></a>
+        </ul>
+        <div>
+            <h6 class="copyright">Copyright &copy 2021 [FArbucks]. All Rights Reserved</h6>
+        </div>
+    </footer>
+
+</body>
+</html>

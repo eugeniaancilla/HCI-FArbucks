@@ -1,0 +1,152 @@
+.ourEvents {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+    url(Images/Desktop/Events1.jpg);
+    background-size: cover;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.ourEvents h1 {
+    margin: 0;
+    font-size: 88px;
+    font-family: 'Abril Fatface';
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    line-height: 330px;
+}
+
+.event {
+    margin-top: 35px;
+    display: flex;
+}
+
+#event3 {
+    margin-bottom: 35px;
+}
+
+.image {
+    width: 50%;
+}
+
+.content {
+    width: 50%;
+    background-color: #BD6124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content2 {
+    background-color: #474747;
+}
+
+#content3 {
+    background-color: #E64D4D;
+}
+
+.inside {
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h2 {
+    font-family: 'Abril Fatface';
+    font-size: 54px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 0.06em;
+    line-height: 100%;
+    text-align: center;
+}
+
+.content p {
+    text-align: center;
+    font-size: 21px;
+    line-height: 150%;
+    margin: 45px 0;
+}
+
+@media screen and (max-width: 1030px){
+    .content h2 {
+        font-size: 45px;
+    }
+    .content p {
+        font-size: 19px;
+        line-height: 130%;
+        margin: 25px 0;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .ourEvents {
+        background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+        url(Images/Tablet/Events1.jpeg);
+        background-size: cover;
+        margin-top: 25px;
+    }
+    .event {
+        margin-top: 25px;
+    }
+    #event3 {
+        margin-bottom: 25px;
+    }
+    .inside {
+        width: 76%;
+    }
+    #inside3 {
+        width: 75%;
+    }
+    .ourEvents h1 {
+        font-size: 64px;
+        line-height: 247px;
+    }
+    .content h2 {
+        font-size: 35px;
+    }
+    .content p {
+        font-size: 15px;
+        line-height: 130%;
+        margin: 25px 0;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .ourEvents h1 {
+        font-size: 55px;
+        line-height: 200px;
+    }
+    .content h2 {
+        font-size: 30px;
+    }
+    .content p {
+        font-size: 13px;
+        line-height: 130%;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .ourEvents {
+        margin-top: 20px;
+    }
+    .ourEvents h1 {
+        font-size: 40px;
+        line-height: 150px;
+    }
+    .event {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    #event2 {
+        flex-direction: column-reverse;
+    }
+    .image {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        padding: 30px 0;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- buat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- exclamation icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <!-- buat icon di navbar mobile -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+
+    <title>FArbucks - Login</title>
+</head>
+<body>
+    <header class="header">
+        <img src="Images/FArbucksLogo.png" alt="FArbucks Logo">
+        <ul>
+            <a href="register.html"><button class="registerBtn">Register</button></a>
+            <a href="#"><button class="loginBtn">Log In</button></a>
+        </ul>
+    </header>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <li id="openmenu"><i class="material-icons">menu</i>MENU</li>
+            <li id="closemenu"> <i class="material-icons">close</i>CLOSE</li>
+        </label>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="coffee.html">COFFEE</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Member Login</h1>
+        <form method="post" id="form" novalidate>
+            <div class="formdiv">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="formdiv">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="buttondiv">
+                <input type=submit value="Login" id="submit">
+            </div>
+        </form>
+        <p>Want to join us? Register <a href="register.html">here!</a></p>
+    </main>
+
+    <footer>
+        <ul>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Images/Instagram.png" alt="instagram"></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><img src="Images/Twitter.png" alt="twitter"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="Images/Facebook.png" alt="facebook"></a>
+        </ul>
+        <div>
+            <h6 class="copyright">Copyright &copy 2021 [FArbucks]. All Rights Reserved</h6>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

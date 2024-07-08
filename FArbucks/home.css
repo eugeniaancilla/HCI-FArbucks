@@ -1,0 +1,209 @@
+html {
+    height: 100vh;
+}
+
+.body {
+    font-weight: 300;
+    color: #ffffff;
+}
+
+
+/* HOME 1 */
+.home1div {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+    url(Images/Desktop/Home1.jpg);
+    background-size: cover;
+}
+
+.home1 {
+    width: 67.4%;
+    margin-left: 5.83%;
+    padding-top: 90px;
+    padding-bottom: 120px;
+}
+
+.home1 h1 {
+    font-family: 'Abril Fatface';
+    font-size: 82px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 0.06em;
+}
+
+.home1 p {
+    font-size: 28px;
+    margin-bottom: 60px;
+}
+
+
+/* HOME 2 and 3 */
+.home2div {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+    url(Images/Desktop/Home2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home3div {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+    url(Images/Desktop/Home3.jpg);
+    background-size: cover;
+}
+
+.home23 {
+    width: 67.4%;
+    margin-left: 5.83%;
+    padding-top: 90px;
+    padding-bottom: 120px;
+}
+
+#home2 {
+    text-align: right;
+    margin-right: 5.83%;
+}
+
+#home3 {
+    width: 61.8%;
+}
+
+.home23 h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 72px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 0.06em;
+}
+
+.home23 p {
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.button {
+    padding: 6px 30px;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 100px;
+    border-color: #ffffff;
+    border-style: solid;
+    transition: transform .1s;
+}
+
+.button:hover {
+    transform: scale(1.06);
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 810px){
+    .home1 {
+        width: 76%;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    .home1 h1 {
+        font-size: 60px;
+    }
+    .home1 p {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .home23 {
+        width: 76%;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    .home23 h1 {
+        font-size: 55px;
+    }
+    .home23 p {
+        font-size: 22px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    #home3 {
+        width: 76%;
+    }
+    .button {
+        padding: 5px 25px;
+        font-size: 15px;
+        border-width: 1.13px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .button {
+        padding: 5px 23px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .home1div {
+        background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+        url(Images/Mobile/Home1.png);
+        background-size: cover;
+    }
+    .home2div {
+        background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+        url(Images/Mobile/Home2.png);
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .home3div {
+        background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+        url(Images/Mobile/Home3.png);
+        background-size: cover;
+    }
+    .home1 {
+        width: 76%;
+        margin-left: 8.3%;
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
+    .home1 h1 {
+        font-size: 35px;
+        line-height: 95%;
+    }
+    .home1 p {
+        font-size: 13px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    .home23 {
+        width: 76%;
+        margin-left: 8.3%;
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
+    .home23 h1 {
+        font-size: 32.77px;
+    }
+    .home23 p {
+        font-size: 12.29px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    #home2 {
+        margin-right: 8.3%;
+    }
+    #home3 {
+        width: 76%;
+    }
+    .button {
+        padding: 4px 20px;
+        font-size: 12.5px;
+        border-radius: 100px;
+    }
+    .button:active {
+        transform: scale(1.06);
+    }
+}

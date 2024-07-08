@@ -1,0 +1,140 @@
+main {
+    text-align: center;
+    padding: 50px 0;
+}
+
+main h1 {
+    font-family: 'Abril Fatface';
+    font-weight: lighter;
+    margin: auto;
+    padding-bottom: 40px;
+    width: 40%;
+    line-height: 32px;
+    color: #007047;
+}
+
+form {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    background-color: #699B7F;
+    padding: 20px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+    color: white;
+}
+
+form input, textarea, select {
+    background-color: #699B7F;
+    color: white;
+}
+
+::placeholder{
+    color: white;
+    opacity: 70%;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.formdiv {
+    padding-bottom: 16px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    position: relative;
+}
+
+.formdiv label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.formdiv input {
+    border: none;
+    border-bottom: 1.5px solid;
+    padding: 3px;
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+}
+
+main p, main p a {
+    font-size: 12px;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+main p a {
+    font-weight: 700;
+    color: #699B7F;
+}
+
+.formdiv i {
+    position: absolute;
+    right: 5px;
+    top: 29px;
+    visibility: hidden;
+}
+
+.formdiv.error i.fa-exclamation-circle {
+    color: #8b0000;
+    visibility: visible;
+}
+
+.formdiv small {
+    position: absolute;
+    font-size: 11px;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+
+.formdiv.error small {
+    color: #8b0000;
+    visibility: visible;
+}
+
+#submit {
+    color: #ffffff;
+    background-color: #007047;
+    border-color: #007047;
+    padding: 4px 25px;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 1.5px;
+    transition: transform .1s;
+}
+
+#submit:hover {
+    transform: scale(1.06);
+}
+@media screen and (max-width: 810px){
+    form {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 450px){
+    form {
+        width: 80%;
+    }
+    .formdiv {
+        font-size: 13px;
+    }
+    .formdiv input {
+        font-size: 12px;
+    }
+    .formdiv small {
+        font-size: 10px;
+    }
+    #submit {
+        font-size: 13px;
+    }
+    main p, main p a {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,147 @@
+html {
+    height: 100vh;
+}
+
+.body {
+    margin: 0;
+    border: 0;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #FFFADA;
+}
+
+.coffees {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+    url(Images/Desktop/CoffeeBanner.png);
+    background-size: cover;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.coffees h1 {
+    margin: 0;
+    font-size: 88px;
+    font-family: 'Abril Fatface';
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    line-height: 450px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding:15px 0;
+}
+
+.card {
+    margin: 20px;
+    position: relative;
+    width: 250px;
+    height: 315px;
+    transition: 0.3s ease-out;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+    border-radius: 25px;
+}
+
+.card .imgbox {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.5s;
+}
+
+.card .content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    padding: 8px 20px;
+    background-color: #ffffff;
+    transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+    color:black;
+    border-radius: 22px;
+    text-align: center;
+    opacity: 90%;
+}
+
+.card .content h2{
+    font-weight: bold;
+    color: #007047;
+    font-size: 20px;
+    line-height: 22.5px;
+}
+
+.card .content p{
+    font-size: 14px;
+}
+
+.card .content h3{
+    font-weight: bold;
+    color: #699B7F;
+}
+
+.card:hover .content{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.card:hover .content h2{
+    padding-top: 50px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 810px){
+    .coffees {
+        background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+        url(Images/Tablet/CoffeeBanner.png);
+        background-size: cover;
+        height: 300px;
+        margin-top: 25px;
+    }
+    .coffees h1 {
+        line-height: 300px;
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .coffees {
+        height: 200px;
+    }
+    .coffees h1 {
+        font-size: 55px;
+        line-height: 250px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .coffees {
+        margin-top: 20px;
+    }
+    .coffees h1 {
+        font-size: 40px;
+        line-height: 180px;
+    }
+}

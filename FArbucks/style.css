@@ -1,0 +1,245 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFADA;
+}
+
+/* HEADER */
+.header {
+    background-color: #007047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding-left: 30px;
+    padding-right: 55px;
+    z-index: 1;
+}
+
+header img {
+    width: 230px;
+    height: 51px;
+    margin-right: auto;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header button {
+    padding: 4px 25px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 100px;
+    border-color: #ffffff;
+    border-style: solid;
+    transition: transform .1s;
+}
+
+.loginBtn {
+    color: #007047;
+    background-color: #ffffff;
+    margin-left: 17px;
+    font-weight: 600;
+}
+
+header button:hover {
+    transform: scale(1.06);
+}
+
+/* NAVIGATION BAR */
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: #699B7F;
+    z-index: 1;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 80px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 25.4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: #8AB682;
+}
+
+label #openmenu, label #closemenu {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+    line-height: 45px;
+    color: #ffffff;
+}
+
+#check {
+    display: none;
+}
+
+/* FOOTER */
+footer {
+    background-color: #007047;
+    text-align: center;
+    position: relative;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+footer ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+
+.copyright {
+    color: #ffffff;
+    padding-top: 10px;
+    margin: 0;
+    font-family: 'Abril Fatface';
+    font-weight: normal;
+    font-size: 20px;
+}
+
+footer ul a img {
+    margin: 0 20px;
+    height: 42.5px;
+    cursor: pointer;
+    transition: transform .1s;
+}
+
+footer ul a img:hover {
+    transform: scale(1.06);
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 810px){
+    .header {
+        padding-right: 35px;
+    }
+}
+
+@media screen and (max-width: 635px){
+    /* HEADER */
+    .header {
+        flex-direction: column;
+        height: 100px;
+        position: sticky;
+        top: 0;
+    }
+    header img {
+        width: 151.57px;
+        height: 33.61px;
+        margin: 0;
+        align-self: center;
+    }
+    header ul {
+        padding-left: 0;
+    }
+    header button {
+        padding: 4px 20px;
+        font-size: 12.55px;
+        cursor: pointer;
+        border-radius: 100px;
+        border-color: #ffffff;
+        border-style: solid;
+        transition: transform .1s;
+    }
+    header button:active {
+        transform: scale(1.06);
+    }
+
+    /* NAVIGATION BAR */
+    nav {
+        height: 45px;
+        position: sticky;
+        top: 100px;
+    }
+    label #openmenu {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        background-color: #699B7F;
+        left: -100%;
+        transition: .5s;
+    }
+    nav ul li {
+        display: block;
+        line-height: 45px;
+    }
+    nav label i {
+        padding-right: 5px;
+    }
+    nav ul li a {
+        font-size: 20px;
+        padding: 0;
+        display: inline-block;
+        width: 100%;
+        align-self: center;
+    }
+    nav ul li a:active {
+        background-color: #8AB682;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    #check:checked ~ label #openmenu {
+        display: none;
+    }
+    #check:checked ~ label #closemenu {
+        display: block;
+    }
+
+    /* FOOTER */
+    footer {
+        height: 100px;
+    }
+    footer ul a img {
+        margin: 0 15px;
+        height: 30.68px;
+    }
+    footer ul {
+        margin: 21px 0 0 0;
+    }
+    .copyright {
+        padding-top: 10px;
+        font-size: 12.48px;
+    }
+}
